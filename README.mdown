@@ -1,0 +1,3 @@
+# Project Stalker
+
+A simple way to watch projects that you are using or just have an overall interest in. 
