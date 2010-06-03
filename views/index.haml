@@ -7,4 +7,22 @@
   %body
   %h1= 'currently watching:'
   %a{:id => 'add_link', :href => '/projects/new'} add a new project
-  .form
+  .form{:style => 'display:none'}
+    %form{:method => 'post', :id => 'js-new_project_form'}
+      %label
+        project name
+      %input{:type => 'text_field', :id => 'new_project_name', :name => 'name'}
+      %button{:type => 'submit'} add
+      %span.loading{:style => 'display:none', :class => 'loader'} working...
+  .main_content
+    .left
+      %ul.projects
+        - @projects.each do |name|
+          %li= name
+        
+    .right
+      %ul.tweets
+        - unless @tweets.nil?
+          - @tweets.each do |tweet|
+            %li
+            

@@ -1,5 +1,6 @@
-%form{:method => 'post', :action => '/create'}
+%form{:method => 'post', :id => 'js-new_project_form'}
   %label
     project name
-  %input{:type => 'text_field'}
+  %input{:type => 'text_field', :id => 'new_project_name', :name => 'name'}
   %button{:type => 'submit'} add
+  %span.loading{:style => 'display:none', :class => 'loader'} working...

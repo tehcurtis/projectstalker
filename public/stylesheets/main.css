@@ -1,1 +1,24 @@
-label { display:block; }
+body {
+  font-family: Helvetica, Arial;
+  font-size:12px;
+}
+label { 
+  display:block; 
+}
+ul {
+  margin:0;
+  padding:0;
+}
+ul li {
+  list-style-type:none;
+  font-size:22px;
+}
+div.main_content div.left, div.main_content div.right {
+  float:left;
+}
+div.main_content div.left {
+  width:200px;
+}
+div.main_content div.right {
+  width:400px;
+}
